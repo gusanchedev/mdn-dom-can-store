@@ -1,0 +1,12 @@
+.product-catalog {
+    margin: 2rem 1rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 3rem;
+}
+.article-name {
+    font-size: 1.2rem;
+}
+.article-image-container {
+    height: 200px;
+}

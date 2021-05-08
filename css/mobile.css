@@ -1,0 +1,115 @@
+:root {
+    --page--background: #ffffff;
+    --article-border: #114e60;
+    --article-font: #325288;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 14px;
+    font-family: 'Fjalla One', sans-serif;
+}
+body {
+    margin: 0 auto;
+}
+header {
+    text-align: center;
+    color: var(--article-font);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem;
+}
+header span {
+    margin: 0.8rem;
+}
+.category-search {
+    text-align: center;
+    margin: 0.5rem;
+}
+.category-search ul {
+    list-style: none;
+}
+.category-search select {
+    margin: 0.8rem;
+}
+.category-search input {
+    margin: 0.8rem;
+    padding: 0.3rem;
+}
+.category-search button {
+    color: white;
+    background-color: var(--article-font);
+    padding: 0.4rem 0.8rem;
+}
+.product-catalog {
+    margin: 2rem 1rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+}
+.article-container {
+    border: 2px solid var(--article-font);
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+.article-container-header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0.5rem;
+}
+.article-icon-container {
+    width: 20px;
+    height: 20px;
+    padding: 0.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--article-border);
+    border-radius: 50%;
+    margin-right: 0.5rem;
+    color: var(--article-font);
+}
+.article-name {
+    font-size: 0.8em;
+}
+.article-image-container {
+    height: 100px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.article-price-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 4rem;
+    height: 4rem;
+    color: black;
+    font-weight: bold;
+    background-color: yellow;
+    border: 1px solid white;
+    border-radius: 50%;
+    margin: 0.5rem;
+}
+footer {
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.social-icon {
+    margin: 0 0.5rem;
+    color: var(--article-font);
+    border: 1px solid var(--article-font);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
