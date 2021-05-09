@@ -104,13 +104,11 @@ async function createArticle(item) {
     articleIconContainer.appendChild(articleIcon);
     
     articleContainerHeader.classList.add('article-container-header');
-    articleContainerHeader.appendChild(articleIconContainer);
-    articleContainerHeader.appendChild(articleName);
+    articleContainerHeader.append(articleIconContainer, articleName);
     
     articleContainer.classList.add('article-container');
-    articleContainer.appendChild(articleContainerHeader);
-    articleContainer.appendChild(articleImageContainer);
-    
+    articleContainer.append(articleContainerHeader, articleImageContainer);
+  
     catalogGrid.appendChild(articleContainer);
 }
 
